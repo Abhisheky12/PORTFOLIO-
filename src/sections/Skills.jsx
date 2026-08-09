@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { Code2, Monitor, Server, Database } from "lucide-react";
+import { Code2, Monitor, Server, Database, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import { portfolioData } from "../data/portfolio";
 import SectionHeading from "../components/SectionHeading";
 
 export default function Skills() {
-  const { languages, frontend, backend, tools } = portfolioData.skills;
+  const { languages, frontend, backend, tools, ai } = portfolioData.skills;
   const [activeCategory, setActiveCategory] = useState("all");
 
   const categories = [
@@ -13,7 +13,8 @@ export default function Skills() {
     { id: "languages", label: "Languages", icon: Code2, data: languages },
     { id: "frontend", label: "Frontend", icon: Monitor, data: frontend },
     { id: "backend", label: "Backend", icon: Server, data: backend },
-    { id: "tools", label: "Tools & DBs", icon: Database, data: tools }
+    { id: "tools", label: "Tools & DBs", icon: Database, data: tools },
+    { id: "ai", label: "Generative AI", icon: Sparkles, data: ai }
   ];
 
   // Get active skill sets
@@ -23,7 +24,8 @@ export default function Skills() {
         { title: "Languages", data: languages, icon: Code2 },
         { title: "Frontend Development", data: frontend, icon: Monitor },
         { title: "Backend Development", data: backend, icon: Server },
-        { title: "Databases & Tools", data: tools, icon: Database }
+        { title: "Databases & Tools", data: tools, icon: Database },
+        { title: "Generative AI", data: ai, icon: Sparkles }
       ];
     }
     const cat = categories.find((c) => c.id === activeCategory);
@@ -93,6 +95,11 @@ export default function Skills() {
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-accent-400" />
                       <span>{skill.name}</span>
+                      {skill.learning && (
+                        <span className="ml-0.5 text-[10px] font-sans font-semibold tracking-wide px-1.5 py-0.5 rounded bg-accent-500/15 text-accent-400 border border-accent-500/30">
+                          Learning
+                        </span>
+                      )}
                     </motion.div>
                   ))}
                 </div>

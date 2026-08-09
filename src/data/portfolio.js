@@ -159,7 +159,14 @@ export const portfolioData = {
       { name: "Git", icon: "Git" },
       { name: "GitHub", icon: "GitHub" },
       { name: "Postman", icon: "Postman" },
-      { name: "VS Code", icon: "VSCode" }
+      { name: "VS Code", icon: "VSCode" },
+      { name: "Pinecone (Vector DB)", icon: "Pinecone" }
+    ],
+    ai: [
+      { name: "RAG", icon: "RAG" },
+      { name: "LLMs", icon: "LLM" },
+      { name: "LangChain", icon: "LangChain", learning: true },
+      { name: "LangGraph", icon: "LangGraph", learning: true }
     ]
   },
   achievements: [
