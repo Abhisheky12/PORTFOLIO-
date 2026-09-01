@@ -18,7 +18,7 @@ export const portfolioData = {
   stats: [
     { label: "DSA Problems Solved Across Leetcode", value: "800+" },
     { label: "Codeforces Problem Solved", value: "190+" },
-    { label: "LeetCode Rating", value: "1700+" },
+    { label: "LeetCode Rating", value: "1775+" },
     { label: "SIH Internal Round", value: "Top 10" }
   ],
   about: {
@@ -188,7 +188,7 @@ export const portfolioData = {
     {
       title: "LeetCode Rating",
       detail: "Highest rating of 1700+ reached with active contest participation.",
-      metric: "1700+"
+      metric: "1775+"
     }
 
   ],
