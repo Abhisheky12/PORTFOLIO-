@@ -85,7 +85,7 @@ export const portfolioData = {
     },
     {
       id: "codeforge",
-      name: "CodeForge",
+      name: "CodeSphere",
       description: "A complete online collaborative judge and sandbox coding platform offering multi-language compile, test execution, and AI hints.",
       tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Judge0 API", "Monaco Editor", "Google Gemini"],
       features: [
@@ -96,7 +96,7 @@ export const portfolioData = {
         "Comprehensive administrator panel for compiling logs and managing problem statements"
       ],
       github: "https://github.com/Abhisheky12/CodeForge",
-      live: "#"
+      live: "http://51.20.229.48:5173"
     },
     {
       id: "shopeasy",
