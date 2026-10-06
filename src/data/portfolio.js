@@ -18,7 +18,7 @@ export const portfolioData = {
   stats: [
     { label: "DSA Problems Solved Across Leetcode", value: "800+" },
     { label: "Codeforces Problem Solved", value: "190+" },
-    { label: "LeetCode Rating", value: "1775+" },
+    { label: "LeetCode Rating", value: "1800" },
     { label: "SIH Internal Round", value: "Top 10" }
   ],
   about: {
@@ -134,7 +134,8 @@ export const portfolioData = {
       { name: "C++", icon: "C++" },
       { name: "JavaScript", icon: "JS" },
       { name: "TypeScript", icon: "TS" },
-      { name: "Python", icon: "PY" }
+      { name: "Python", icon: "PY" },
+      { name: "Java (OOP)", icon: "Java" }
     ],
     frontend: [
       { name: "React.js", icon: "React" },
@@ -187,8 +188,8 @@ export const portfolioData = {
     },
     {
       title: "LeetCode Rating",
-      detail: "Highest rating of 1700+ reached with active contest participation.",
-      metric: "1775+"
+      detail: "Highest rating of 1800 reached with active contest participation.",
+      metric: "1800"
     }
 
   ],
